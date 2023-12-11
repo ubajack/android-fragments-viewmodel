@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fragment Navigation</string>
+    <string name="hello_first_fragment">Fragment de test</string>
+    <string name="sample_data">12</string>
+    <string name="btn_show">SHOW</string>
+    <string name="btn_hide">HIDE</string>
+    <string name="btn_random">RANDOM</string>
+</resources>
