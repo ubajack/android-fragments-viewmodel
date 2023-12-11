@@ -1,5 +1,6 @@
 package com.ubalia.fragment.navigation
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ToggleButton
@@ -23,6 +24,14 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
+        binding.btnGoToActivity.setOnClickListener {
+            // val intent = Intent(this, SecondActivity::class.java)
+            // startActivity(intent)
+            Intent(this, SecondActivity::class.java).also {
+                startActivity(it)
+            }
+        }
 
         binding.btnRandom.setOnClickListener {
             randomNumber = generateRandomNumber(0, 100)
